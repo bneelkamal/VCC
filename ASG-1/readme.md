@@ -13,7 +13,7 @@ The system consists of a public-facing **API Gateway** that securely communicate
 
 ---
 
-## System Architecture
+## 🏗️ System Architecture
 
 | **Node** | **VM Name** | **Role** | **IP Address** | **Port** |
 | :--- | :--- | :--- | :--- | :--- |
