@@ -1,7 +1,9 @@
-# VCC - Assignment 2: High-Availability Auto-Scaling and Security Configuration in GCP
+NEELKAMAL BADANA
+Virtualization and Cloud Computing
+Assignment 2: Auto-Scaling and Security Configuration in GCP
 
 ## Overview
-This repository contains the deployment scripts and configuration files for Cloud Infrastructure Assignment 2. The project demonstrates a highly available, auto-scaling web application environment deployed on Google Cloud Platform (GCP).
+This repository contains the deployment scripts and configuration files for VCC Assignment 2. The project demonstrates a highly available, auto-scaling web application environment deployed on Google Cloud Platform (GCP).
 
 ## Architecture Highlights
 * **Decoupled Storage (Cattle vs. Pets):** Web assets (`index.html`) are not hardcoded into the VM. They are securely hosted in a Cloud Storage bucket and fetched dynamically via a startup script upon boot.
