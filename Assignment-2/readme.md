@@ -1,6 +1,6 @@
+#Virtualization and Cloud Computing
+#Assignment 2: Auto-Scaling and Security Configuration in GCP
 NEELKAMAL BADANA
-Virtualization and Cloud Computing
-Assignment 2: Auto-Scaling and Security Configuration in GCP
 
 ## Overview
 This repository contains the deployment scripts and configuration files for VCC Assignment 2. The project demonstrates a highly available, auto-scaling web application environment deployed on Google Cloud Platform (GCP).
