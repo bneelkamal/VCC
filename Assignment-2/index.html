@@ -1,1 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VCC - Assignment 2</title>
+    <style>
+        body { font-family: 'Segoe UI', Tahoma, sans-serif; background-color: #f4f7f6; color: #333; padding: 20px; line-height: 1.6; }
+        .container { max-width: 850px; margin: auto; background: #fff; padding: 30px; border-radius: 8px; box-shadow: 0 4px 15px rgba(0,0,0,0.1); }
+        h1 { color: #2c3e50; border-bottom: 3px solid #3498db; padding-bottom: 10px; }
+        h2 { color: #2980b9; margin-top: 25px; }
+        .info-box { background: #e8f4f8; padding: 20px; border-left: 5px solid #3498db; margin-bottom: 20px; border-radius: 4px; }
+        .server-data { background: #202124; color: #e8eaed; padding: 20px; border-radius: 6px; font-family: monospace; font-size: 15px; margin-bottom: 20px;}
+        .security-data { background: #fdf2f2; color: #c5221f; border-left: 5px solid #ea4335; padding: 15px; border-radius: 4px; font-family: monospace; font-size: 14px;}
+        .highlight { color: #4caf50; font-weight: bold; }
+        .cmd-box { background: #000; color: #0f0; padding: 15px; font-family: monospace; border-radius: 4px; font-size: 16px; margin-top: 10px; display: inline-block;}
+    </style>
+</head>
+<body>
+    <div class="container">
+             <h1>Virtualization and Cloud Computing</h1>
+	<h2>Assignment 2: Use AWS/GCP/Any Other Public Cloud Service to Create a VM to Leverage Auto Scaling and Security</h2>
+        
+        <div class="info-box">
+            <h2>My Profile</h2>
+            <p><strong>Name:</strong> Neelkamal Badana</p>
+            <p><strong>Course:</strong> Virtualization and Cloud Computing</p>
+		<p><strong>M.Tech-AI, IIT Jodhpur</strong></p>
+            <p><em>Note: This HTML file is securely hosted in a Cloud Storage Bucket, decoupled from the VM compute instances.</em></p>
+        </div>
 
+        <h2>Security Posture (IAM & Firewalls)</h2>
+        <p>To adhere to the Principle of Least Privilege and secure the network, the following rules are active:</p>
+        <div class="security-data">
+            <p><strong>IAM Service Account:</strong> vcc-web-sa</p>
+            <p><strong>IAM Roles:</strong> Logs Writer, Monitoring Metric Writer, Storage Object Viewer</p>
+            <p><strong>Firewall Rule 1 (HTTP):</strong> ALLOW Ingress Port 80 from 0.0.0.0/0 (Global)</p>
+            <p><strong>Firewall Rule 2 (SSH):</strong> ALLOW Ingress Port 22 ONLY from 35.235.240.0/20 (IAP)</p>
+        </div>
+
+        <h2>Live Server Metrics</h2>
+        <div class="server-data">
+            <p>Target VM Hostname: <span class="highlight">__HOSTNAME__</span></p>
+            <p>Internal IP: <span class="highlight">__INTERNAL_IP__</span></p>
+            <p>External IP: <span class="highlight">__EXTERNAL_IP__</span></p>
+            <p>Deployment Zone: <span class="highlight">__ZONE__</span></p>
+            <p>Machine Type: <span class="highlight">__MACHINE_TYPE__</span></p>
+        </div>
+
+        <h2>Auto-Scaler Stress Test</h2>
+        <div class="cmd-box">stress --cpu 4 --timeout 180</div>
+    </div>
+</body>
+</html>
