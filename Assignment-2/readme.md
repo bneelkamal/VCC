@@ -1,5 +1,5 @@
-#Virtualization and Cloud Computing
-#Assignment 2: Auto-Scaling and Security Configuration in GCP
+## Virtualization and Cloud Computing
+## Assignment 2: Auto-Scaling and Security Configuration in GCP
 NEELKAMAL BADANA
 
 ## Overview
