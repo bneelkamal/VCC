@@ -1,4 +1,4 @@
-# Hybrid Cloud Auto-Scaler & Cost Optimization
+# Hybrid Cloud Auto-Scaling & Cost Optimization
 
 **Course:** Virtualization and Cloud Computing (CSL7510)  
 **Author:** Neelkamal Badana  
