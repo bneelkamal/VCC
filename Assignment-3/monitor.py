@@ -4,9 +4,9 @@ import os
 
 # --- GCP CONFIGURATION ---
 # Replace these variables with your actual GCP details before running locally.
-INSTANCE_NAME = "GCP_INSTANCE_NAME" 
-ZONE = "GCP_ZONE"                   
-PROJECT_ID = "GCP_PROJECT_ID"       
+INSTANCE_NAME = "YOUR_GCP_INSTANCE_NAME" 
+ZONE = "YOUR_GCP_ZONE"                   
+PROJECT_ID = "YOUR_GCP_PROJECT_ID"       
 
 cloud_is_running = False
 
