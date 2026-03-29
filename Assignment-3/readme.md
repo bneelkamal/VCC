@@ -24,6 +24,18 @@ This repository contains the implementation of a custom Hybrid Cloud Auto-Scaler
 * Google Cloud CLI (`gcloud`) installed and configured locally
 * Linux `stress` utility (`sudo apt-get install stress`)
 
+### GCP Environment Setup
+Before running the local auto-scaler, you must configure the standby cloud environment:
+
+1. **Project & API:** Create a new GCP Project and enable the **Compute Engine API**.
+2. **IAM Authentication:** * Create a Service Account with the **Compute Instance Admin (v1)** role.
+   * Generate a JSON key, download it, and save it in the root of this repository as `gcp-key.json`.
+3. **Provision the Burst VM:**
+   * Create a new VM instance named `gcp-burst-vm` (e.g., `e2-micro` in `us-central1-c`).
+   * **Crucial Step:** Under the VM's "Custom Metadata", add a new item with the key `startup-script` and paste the contents of `startup.sh` from this repository.
+   * Ensure HTTP traffic is allowed through the firewall.
+4. **Baseline State:** Once the VM is created, **STOP** the instance so it does not incur billing. The auto-scaler will handle booting it when necessary.
+
 ### Local Implementation
 1. Clone the repository:
    ```bash
